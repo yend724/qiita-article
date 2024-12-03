@@ -10,7 +10,7 @@ updated_at: ''
 id: "20241204-z8dlafmt6zhlldsz"
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 :::note info
