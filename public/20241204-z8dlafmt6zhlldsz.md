@@ -7,7 +7,7 @@ tags:
   - 'TypeScript'
 private: true
 updated_at: ''
-id: "20241204-z8dlafmt6zhlldsz"
+id: null
 organization_url_name: null
 slide: false
 ignorePublish: false
