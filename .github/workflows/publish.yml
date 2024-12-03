@@ -2,10 +2,10 @@
 name: Publish articles
 
 on:
-  push:
-    branches:
-      - main
-      - master
+  # push:
+  #   branches:
+  #     - main
+  #     - master
   workflow_dispatch:
 
 permissions:
@@ -26,4 +26,4 @@ jobs:
       - uses: increments/qiita-cli/actions/publish@v1
         with:
           qiita-token: ${{ secrets.QIITA_TOKEN }}
-          root: "."
+          root: '.'
