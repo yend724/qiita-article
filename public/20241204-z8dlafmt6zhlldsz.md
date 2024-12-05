@@ -5,7 +5,7 @@ tags:
   - CSS
   - JavaScript
   - TypeScript
-private: true
+private: false
 updated_at: '2024-12-03T18:22:20+09:00'
 id: 2a9d75c57566049f0325
 organization_url_name: null
