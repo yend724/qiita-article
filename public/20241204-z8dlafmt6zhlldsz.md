@@ -55,7 +55,7 @@ Viteを使ってサクッと作りました。テンプレートは[vanilla-ts](
 
 ### カメラを使った写真の撮影
 
-デバイスのカメラの利用には、`mediaDevices.getUserMedia()`を使いました。このメソッドでカメラから映像ストリームを取得し、それを`<video>`要素に流し込んでいます。
+デバイスのカメラ利用は、`mediaDevices.getUserMedia()`を使いました。このメソッドでカメラから映像ストリームを取得し、それを`<video>`要素に流し込んでいます。
 
 ```ts:/src/assets/js/camera.ts
 try {
@@ -74,7 +74,7 @@ try {
 }
 ```
 
-写真の撮影は`<canvas>`を使って行っています。`<video>`の現在のフレームをキャプチャして、`toDataURL()`で画像をデータURLに変換しています。
+写真の撮影は`<canvas>`を使っています。`<video>`の現在のフレームをキャプチャして、`toDataURL()`で画像をデータURLに変換しています。
 
 ```ts:/src/assets/js/camera.ts
 capture(ctx: CanvasRenderingContext2D): string {
@@ -88,7 +88,7 @@ capture(ctx: CanvasRenderingContext2D): string {
 
 ### デバイスの振動判定
 
-デバイスの振動を検出するには`DeviceMotionEvent`を利用しました。
+デバイスの振動検出では`DeviceMotionEvent`を利用しました。
 
 `acceleration`の値を取得し、X・Y・Z軸方向の加速度を基に、振動の強さを計算しています。計算のロジックは単純で、加速度ベクトルの大きさを求めているだけです。
 
@@ -119,7 +119,7 @@ window.addEventListener(
 );
 ```
 
-また現状のiOSデバイス（iOS13以降？）では`DeviceDeviceMotionEvent`を使用して値を取得するために、ユーザーの権限のリクエストが必要です。つまり明示的に`DeviceMotionEvent.requestPermission()`を実行する必要があります。
+また現状のiOSデバイス（iOS13以降？）では`DeviceDeviceMotionEvent`を使用するためにユーザーへの権限のリクエストが必要です。つまり明示的に`DeviceMotionEvent.requestPermission()`を実行する必要があります。
 
 ```ts
 #getRequestPermission() {
