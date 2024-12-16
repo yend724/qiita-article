@@ -1,5 +1,10 @@
 {
+  "scripts": {
+    "new": "npx tsx ./scripts/new.ts"
+  },
   "devDependencies": {
-    "@qiita/qiita-cli": "^1.6.1"
+    "@qiita/qiita-cli": "^1.6.1",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
   }
 }
