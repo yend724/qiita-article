@@ -5,6 +5,6 @@
   "devDependencies": {
     "@qiita/qiita-cli": "^1.6.1",
     "@types/node": "^24.0.0",
-    "typescript": "^5.7.2"
+    "typescript": "^6.0.0"
   }
 }
